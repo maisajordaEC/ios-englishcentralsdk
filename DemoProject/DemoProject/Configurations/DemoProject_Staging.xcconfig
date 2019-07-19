@@ -1,0 +1,19 @@
+//
+//  EEnglishCentral_Staging.xcconfig
+//  EnglishCentralApp
+//
+//  Created by Mailyn Sajorda on 25/06/2019.
+//  Copyright © 2019 Mailyn Sajorda. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "DemoProject_Shared.xcconfig"
+#include "../../Pods/Target Support Files/Pods-Demo-DemoProject/Pods-Demo-DemoProject.qa-debug-config.xcconfig"
+#include "../../Pods/Target Support Files/Pods-Demo-DemoProject/Pods-Demo-DemoProject.qa-analyze-config.xcconfig"
+#include "../../Pods/Target Support Files/Pods-Demo-DemoProject/Pods-Demo-DemoProject.qa-test-config.xcconfig"
+#include "../../Pods/Target Support Files/Pods-Demo-DemoProject/Pods-Demo-DemoProject.qa-release-config.xcconfig"
+
+DISPLAY_NAME = $(APP_DISPLAY_NAME) (STG)
+BASE_URL = $(STAGING_URL)

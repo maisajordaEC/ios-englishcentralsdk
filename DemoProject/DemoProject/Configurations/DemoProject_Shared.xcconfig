@@ -1,0 +1,17 @@
+//
+//  EnglishCentral_Shared.xcconfig
+//  EnglishCentralApp
+//
+//  Created by Mailyn Sajorda on 28/06/2019.
+//  Copyright © 2019 Mailyn Sajorda. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "../../Shared/Shared.xcconfig"
+
+APP_DISPLAY_NAME = DemoProject
+APP_BUILD_DATE = 20190628
+APP_BUILD_VERSION = 5.0
+APP_BUILD_NUMBER = 5.0.1

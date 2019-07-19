@@ -1,0 +1,89 @@
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+workspace 'DemoProject'
+project 'DemoProject.xcodeproj'
+
+
+abstract_target "Demo" do
+    # Shared pods that will be inherited by all targets.
+    pod 'InAppSettingsKit', '2.8'
+    pod 'MMDrawerController', '0.6.0'
+    
+    # Import CoreKit
+    pod 'ECCoreKit', :path => "../Kits/ECCoreKit"
+    
+    # Set up cocoapods for 'DemoProject' target.
+    target "DemoProject" do
+        project 'DemoProject.xcodeproj'
+        puts "Installing DemoProject"
+    end
+
+    # Add the private frameworks
+    # We need to add the following targets so they can import the shared 3rd libraries too:
+     target 'ECAnalyticsKit' do
+         project '../Kits/ECAnalyticsKit/ECAnalyticsKit.xcodeproj'
+         pod 'ECAnalyticsKit', :path => "../Kits/ECAnalyticsKit"
+     end
+
+     target 'ECAppRatingKit' do
+       project '../Kits/ECAppRatingKit/ECAppRatingKit.xcodeproj'
+       pod 'ECAppRatingKit', :path => "../Kits/ECAppRatingKit"
+     end
+
+     target 'ECCoreKit' do
+         project '../Kits/ECCoreKit/ECCoreKit.xcodeproj'
+        
+     end
+
+     target 'ECIdentityKit' do
+       project '../Kits/ECIdentityKit/ECIdentityKit.xcodeproj'
+       pod 'ECIdentityKit', :path => "../Kits/ECIdentityKit"
+     end
+
+     target 'ECMonitoringKit' do
+         project '../Kits/ECMonitoringKit/ECMonitoringKit.xcodeproj'
+         pod 'ECMonitoringKit', :path => "../Kits/ECMonitoringKit"
+     end
+
+     target 'ECMyGoalKit' do
+         project '../Kits/ECMyGoalKit/ECMyGoalKit.xcodeproj'
+         pod 'ECMyGoalKit', :path => "../Kits/ECMyGoalKit"
+     end
+
+     target 'ECPaywallKit' do
+       project '../Kits/ECPaywallKit/ECPaywallKit.xcodeproj'
+       pod 'ECPaywallKit', :path => "../Kits/ECPaywallKit"
+     end
+
+     target 'ECPermissionKit' do
+       project '../Kits/ECPermissionKit/ECPermissionKit.xcodeproj'
+       pod 'ECPermissionKit', :path => "../Kits/ECPermissionKit"
+     end
+
+     target 'ECPlayerKit' do
+       project '../Kits/ECPlayerKit/ECPlayerKit.xcodeproj'
+       pod 'ECPlayerKit', :path => "../Kits/ECPlayerKit"
+     end
+
+     target 'ECProgressEventKit' do
+       project '../Kits/ECProgressEventKit/ECProgressEventKit.xcodeproj'
+       pod 'ECProgressEventKit', :path => "../Kits/ECProgressEventKit"
+     end
+
+     target 'ECQuizKit' do
+       project '../Kits/ECQuizKit/ECQuizKit.xcodeproj'
+       pod 'ECQuizKit', :path => "../Kits/ECQuizKit"
+     end
+
+     target 'ECSearchKit' do
+       project '../Kits/ECSearchKit/ECSearchKit.xcodeproj'
+       pod 'ECSearchKit', :path => "../Kits/ECSearchKit"
+     end
+
+     target 'ECTutorKit' do
+       project '../Kits/ECTutorKit/ECTutorKit.xcodeproj'
+       pod 'ECTutorKit', :path => "../Kits/ECTutorKit"
+     end
+end

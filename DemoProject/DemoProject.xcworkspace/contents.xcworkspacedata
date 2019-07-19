@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:DemoProject.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECAnalyticsKit/ECAnalyticsKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECAppRatingKit/ECAppRatingKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECCoreKit/ECCoreKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECIdentityKit/ECIdentityKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECMonitoringKit/ECMonitoringKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECMyGoalKit/ECMyGoalKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECPaywallKit/ECPaywallKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECPermissionKit/ECPermissionKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECPlayerKit/ECPlayerKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECProgressEventKit/ECProgressEventKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECQuizKit/ECQuizKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECSearchKit/ECSearchKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../Kits/ECTutorKit/ECTutorKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

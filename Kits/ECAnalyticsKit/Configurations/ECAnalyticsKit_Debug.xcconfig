@@ -1,0 +1,22 @@
+//
+//  EnglishCentral_Debug.xcconfig
+//  EnglishCentralApp
+//
+//  Created by Mailyn Sajorda on 25/06/2019.
+//  Copyright © 2019 Mailyn Sajorda. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "DemoProject_Shared.xcconfig"
+#include "../../Pods/Target Support Files/Pods-EnglishCentral-DemoProject/Pods-EnglishCentral-DemoProject.dev-debug-config.xcconfig"
+#include "../../Pods/Target Support Files/Pods-EnglishCentral-DemoProject/Pods-EnglishCentral-DemoProject.dev-analyze-config.xcconfig"
+#include "../../Pods/Target Support Files/Pods-EnglishCentral-DemoProject/Pods-EnglishCentral-DemoProject.dev-test-config.xcconfig"
+#include "../../Pods/Target Support Files/Pods-EnglishCentral-DemoProject/Pods-EnglishCentral-DemoProject.dev-release-config.xcconfig"
+
+DISPLAY_NAME = $(EC_DISPLAY_NAME) (DEV)
+BASE_URL = $(DEV_URL)
+BUILD_NUMBER = $(EC_BUILD_NUMBER_DEBUG)
+MARKETING_VERSION = $(EC_BUILD_VERSION)($(BUILD_NUMBER))
+
